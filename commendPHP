@@ -1,0 +1,2 @@
+php artisan make:model prodect -a
+php artisan migrate

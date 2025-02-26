@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\prodect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/index', [prodect::class, 'index']);
+Route::get('/creat', [prodect::class, 'creat']);
+Route::post('/creat', [prodect::class, 'store']);
+
